@@ -9,7 +9,7 @@ async function getWeather() {
     }
 
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=89412e82572b4f68b8581245240912&q=${city}&aqi=no`);
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=89412e82572b4f68b8581245240912&q=${city}&aqi=no`);
         const data = await response.json();
 
         if (!data.location) {
